@@ -24,23 +24,18 @@ https://d396qusza40orc.cloudfront.net/predmachlearn/pml-testing.csv
 
 The data for this project come from this source: http://web.archive.org/web/20161224072740/http:/groupware.les.inf.puc-rio.br/har. 
 
-
 ## Code Description 
 
 After quickly checking the data with str() function, there are many near zero variance predictors that have to be removed for further analysis.
 
-Next we choose to remove several variables that we don't want to include in model-building,
+We choose to remove several variables that we don't want to include in model-building,
 (add them to the list of near zero variance predictors).
 One can use advanced statistical variables to build a model, for example, average, standard deviation, variance, skewness, kurtosis, etc., but these are not provided in the data of test cases.
 
 Select those data without nzv predictors for further processing
 create data partition (training and testing data sets)
 
-create a report describing how you built your model, how you used cross validation, 
-what you think the expected out of sample error is, 
-and why you made the choices you did.
-
-model training
+Model training
 In random forests, there is no need for cross-validation or a separate test set 
 to get an unbiased estimate of the test set error.
 It is estimated internally, during the run.
