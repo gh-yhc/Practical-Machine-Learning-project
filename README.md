@@ -35,10 +35,9 @@ One can use advanced statistical variables to build a model, for example, averag
 Select those data without nzv predictors for further processing
 create data partition (training and testing data sets)
 
-###Model training
-In random forests, there is no need for cross-validation or a separate test set 
-to get an unbiased estimate of the test set error.
-It is estimated internally, during the run.
+### Model training: Random Forests
+The reason for choosing the algorithm random forests is that there is no need for cross-validation or a separate test set 
+to get an unbiased estimate of the test set error. It is estimated internally, during the run.
 https://www.stat.berkeley.edu/~breiman/RandomForests/cc_home.htm#ooberr
 
 Out-of Bag error rate, confusion matrix and variable importance.
